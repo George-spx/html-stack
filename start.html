@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>HTML Lesson - form</title>
+  <meta name="author" content="George Andrei Varga">
+  <meta name="description" content="Define the form described in question.md">
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Registration form</h1>
+    <section>
+      <form method="GET">
+        <fieldset>
+          <legend>Credentials</legend>
+          <label for="email">Email </label>
+          <input type="email" name="email" placeholder="e.g. john@doe.com">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="*******">
+        </fieldset>
+
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="name-lastName">Name & Last Name</label>
+          <input type="text" name="name_lastName" placeholder="John Doe">
+          <label for="telephone_number">Telephone number</label>
+          <input type="tel" name="telephone_number" placeholder="+390123456789">
+        </fieldset>
+
+        <fieldset>
+          <legend>Plans</legend>
+          <label for="plan-select">Choose your plan:</label>
+          <select name="plan-select" id="plan-select">
+            <option value="0">0€ - Free Plan</option>
+            <optgroup label="Premium">
+              <option value="50">50€ - Silver Plan</option>
+              <option value="100">100€ - Gold Plan</option>
+              <option value="150">150€ - Platinum Plan</option>
+            </optgroup>
+          </select>
+          <label for="pro-plan">Pro Plan</label>
+          <input name="pro-plan" type="checkbox">
+        </fieldset>
+
+        <fieldset>
+          <legend>Billing information</legend>
+          <label for="credit-card">Credit Card Number:</label>
+          <input id="credit-card" type="tel" minlength="13" maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+          <!-- Input type should be number, but html5 number element has the default arrows (removable via css) -->
+          <label for="cvc">CVC</label>
+          <input type="tel" name="cvc" placeholder="123">
+          <!-- Input type should be number, but html5 number element has the default arrows (removable via css), tel works just fine -->
+          <label for="exp-date">Expiration Date</label>
+          <input type="date" name="exp-date">
+          <label for="billing-address">Billing Address</label>
+          <input type="text" style="width:300px" name="billing-address" placeholder="Street, Number, City, Postal Code">
+        </fieldset>
+        <button>Sign-up</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
