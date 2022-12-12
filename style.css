@@ -91,6 +91,19 @@ button[disabled] {
     color: var(--green);
     background-color: transparent;
     margin-left: 6px;
+    cursor:pointer;
+}
+
+.search-button:hover{
+    border: 1px solid var(--green);
+    padding: 10px;
+    border-radius: 6px;
+    width: 86px;
+    font-size: inherit;
+    color: var(--background-green);
+    background-color: var(--green);
+    margin-left: 6px;
+    cursor:pointer;
 }
 
 .hamburger-menu{
