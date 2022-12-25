@@ -1,5 +1,6 @@
 @use "common-variables" as common;
 @use "functions" as f;
+@use "sass:color" as c;
 
 @mixin article-style($color, $border-color: common.$green, $font-size: 1rem) {
     text-align: center;
@@ -18,13 +19,13 @@
     align-items: center;
     justify-content: flex-end;
     padding-top: f.pixelToRem(30px);
-    
+
     .title {
         color: common.$green;
         border-bottom: f.pixelToRem(1px) solid common.$blue;
     }
 
-    h2{
+    h2 {
         @extend .title;
         border: 1px solid common.$red;
         padding: 1rem;
@@ -43,12 +44,58 @@
             @include article-style(common.$red);
         }
     }
-    .footer{
+
+    .numbers {
         display: flex;
-        padding: f.pixelToRem(15px);
-        article{
-            @include article-style(common.$green, common.$blue, 2rem);
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        width:98%;
+
+        @mixin square() {
+            width: f.pixelToRem(45px);
+            height: f.pixelToRem(45px);
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        $rems: 1rem, 2rem, 3rem;
+
+        @each $rem in $rems {
+            .fs-#{$rem} {
+                font-size: $rem;
+            }
+        }
+
+        @for $i from 1 through 20 {
+            @if $i ==10 {
+                div:nth-child(#{$i}) {
+                    @include square;
+                    color: red;
+                    background-color: blue;
+                }
+            }
+
+            @else {
+                div:nth-child(#{$i}) {
+                    @include square;
+                    $amount: $i * 5;
+                    color: lighten(black, $amount);
+                    background: darken(white, $amount);
+                }
+            }
         }
     }
     
+    .footer {
+        display: flex;
+        padding: f.pixelToRem(15px);
+
+        article {
+            @include article-style(common.$green, common.$blue, 2rem);
+        }
+    }
+
 }

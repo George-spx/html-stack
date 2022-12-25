@@ -37,6 +37,222 @@
   padding-bottom: 1rem;
   color: red;
 }
+.container .numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 98%;
+}
+.container .numbers .fs-1rem {
+  font-size: 1rem;
+}
+.container .numbers .fs-2rem {
+  font-size: 2rem;
+}
+.container .numbers .fs-3rem {
+  font-size: 3rem;
+}
+.container .numbers div:nth-child(1) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #0d0d0d;
+  background: #f2f2f2;
+}
+.container .numbers div:nth-child(2) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #1a1a1a;
+  background: #e6e6e6;
+}
+.container .numbers div:nth-child(3) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #262626;
+  background: #d9d9d9;
+}
+.container .numbers div:nth-child(4) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #333333;
+  background: #cccccc;
+}
+.container .numbers div:nth-child(5) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #404040;
+  background: #bfbfbf;
+}
+.container .numbers div:nth-child(6) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #4d4d4d;
+  background: #b3b3b3;
+}
+.container .numbers div:nth-child(7) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #595959;
+  background: #a6a6a6;
+}
+.container .numbers div:nth-child(8) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #666666;
+  background: #999999;
+}
+.container .numbers div:nth-child(9) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #737373;
+  background: #8c8c8c;
+}
+.container .numbers div:nth-child(10) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: red;
+  background-color: blue;
+}
+.container .numbers div:nth-child(11) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #8c8c8c;
+  background: #737373;
+}
+.container .numbers div:nth-child(12) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #999999;
+  background: #666666;
+}
+.container .numbers div:nth-child(13) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #a6a6a6;
+  background: #595959;
+}
+.container .numbers div:nth-child(14) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #b3b3b3;
+  background: #4d4d4d;
+}
+.container .numbers div:nth-child(15) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #bfbfbf;
+  background: #404040;
+}
+.container .numbers div:nth-child(16) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #cccccc;
+  background: #333333;
+}
+.container .numbers div:nth-child(17) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #d9d9d9;
+  background: #262626;
+}
+.container .numbers div:nth-child(18) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #e6e6e6;
+  background: #1a1a1a;
+}
+.container .numbers div:nth-child(19) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #f2f2f2;
+  background: #0d0d0d;
+}
+.container .numbers div:nth-child(20) {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: white;
+  background: black;
+}
 .container .footer {
   display: flex;
   padding: 0.9375rem;
