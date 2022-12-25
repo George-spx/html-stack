@@ -1,47 +1,45 @@
-$red: red;
-$green: green;
-$blue: blue;
-
-@mixin article-style($color, $border-color: $green, $font-size: 1rem) {
+@use "common-variables" as common;
+@use "functions" as f;
+@mixin article-style($color, $border-color: common.$green, $font-size: 1rem) {
     text-align: center;
-    border: 1px solid $border-color;
+    border: f.pixelToRem(1px) solid $border-color;
     font-size: $font-size;
-    padding: 80px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: f.pixelToRem(80px);
+    padding-top: f.pixelToRem(16px);
+    padding-bottom: f.pixelToRem(16px);
     color: $color;
 }
 
 .container {
-    border: 1px solid $red;
+    border: f.pixelToRem(1px) solid common.$red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 30px;
+    padding-top: f.pixelToRem(30px);
     .title {
-        color: $green;
-        border-bottom: 1px solid $blue;
+        color: common.$green;
+        border-bottom: f.pixelToRem(1px) solid common.$blue;
     }
 
     .first-row {
         display: flex;
         flex-direction: row;
-        padding: 15px;
+        padding: f.pixelToRem(15px);
 
         article:nth-child(odd) {
-            @include article-style($blue);
+            @include article-style(common.$blue);
         }
 
         article:nth-child(even) {
-            @include article-style($red);
+            @include article-style(common.$red);
         }
     }
     .footer{
         display: flex;
-        padding: 15px;
+        padding: f.pixelToRem(15px);
         article{
-            @include article-style($green, $blue, 2rem);
+            @include article-style(common.$green, common.$blue, 2rem);
         }
     }
     
