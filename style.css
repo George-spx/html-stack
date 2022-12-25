@@ -1,3 +1,50 @@
-
+.container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+.container .title {
+  color: green;
+  border-bottom: 1px solid blue;
+}
+.container .first-row {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.container .first-row article:nth-child(odd) {
+  text-align: center;
+  border: 1px solid green;
+  font-size: 1rem;
+  padding: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: blue;
+}
+.container .first-row article:nth-child(even) {
+  text-align: center;
+  border: 1px solid green;
+  font-size: 1rem;
+  padding: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: red;
+}
+.container .footer {
+  display: flex;
+  padding: 15px;
+}
+.container .footer article {
+  text-align: center;
+  border: 1px solid blue;
+  font-size: 2rem;
+  padding: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: green;
+}
 
 /*# sourceMappingURL=style.css.map */

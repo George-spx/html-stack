@@ -1,0 +1,48 @@
+$red: red;
+$green: green;
+$blue: blue;
+
+@mixin article-style($color, $border-color: $green, $font-size: 1rem) {
+    text-align: center;
+    border: 1px solid $border-color;
+    font-size: $font-size;
+    padding: 80px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: $color;
+}
+
+.container {
+    border: 1px solid $red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 30px;
+    .title {
+        color: $green;
+        border-bottom: 1px solid $blue;
+    }
+
+    .first-row {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+
+        article:nth-child(odd) {
+            @include article-style($blue);
+        }
+
+        article:nth-child(even) {
+            @include article-style($red);
+        }
+    }
+    .footer{
+        display: flex;
+        padding: 15px;
+        article{
+            @include article-style($green, $blue, 2rem);
+        }
+    }
+    
+}
