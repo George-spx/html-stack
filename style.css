@@ -6,9 +6,13 @@
   justify-content: flex-end;
   padding-top: 1.875rem;
 }
-.container .title {
+.container .title, .container h2 {
   color: green;
   border-bottom: 0.0625rem solid blue;
+}
+.container h2 {
+  border: 1px solid red;
+  padding: 15px;
 }
 .container .first-row {
   display: flex;

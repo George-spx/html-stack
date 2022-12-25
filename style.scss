@@ -1,5 +1,6 @@
 @use "common-variables" as common;
 @use "functions" as f;
+
 @mixin article-style($color, $border-color: common.$green, $font-size: 1rem) {
     text-align: center;
     border: f.pixelToRem(1px) solid $border-color;
@@ -17,9 +18,16 @@
     align-items: center;
     justify-content: flex-end;
     padding-top: f.pixelToRem(30px);
+    
     .title {
         color: common.$green;
         border-bottom: f.pixelToRem(1px) solid common.$blue;
+    }
+
+    h2{
+        @extend .title;
+        border: 1px solid common.$red;
+        padding: 15px;
     }
 
     .first-row {
