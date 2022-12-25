@@ -1,0 +1,35 @@
+.container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+.container .title {
+  color: green;
+  border-bottom: 1px solid blue;
+}
+.container section {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.container section article:nth-child(odd) {
+  text-align: center;
+  border: 1px solid green;
+  padding: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: blue;
+}
+.container section article:nth-child(even) {
+  text-align: center;
+  border: 1px solid green;
+  padding: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

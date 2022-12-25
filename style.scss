@@ -1,0 +1,41 @@
+$red: red;
+$green: green;
+$blue: blue;
+
+
+.container {
+    border: 1px solid $red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top:30px;
+    
+    .title {
+        color: $green;
+        border-bottom: 1px solid $blue;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+
+        @mixin article-style($color){
+            text-align: center;
+            border: 1px solid $green;
+            padding: 80px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            color:$color;
+        }
+
+        article:nth-child(odd) {
+            @include article-style($blue);
+        }
+
+        article:nth-child(even) {
+            @include article-style($red);
+        }
+    }
+}
